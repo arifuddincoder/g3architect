@@ -1,0 +1,176 @@
+:root {
+    --dark1: #131313;
+    --dark2: #424242;
+    --dark3: #727272;
+    --dark4: #A1A1A1;
+    --orange: #FF900E;
+    --light-orange: rgba(255, 144, 14, 0.1);
+    --white: #ffffff;
+}
+
+/** common css **/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--dark1);
+}
+
+.work-sans-font {
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: var(--dark3);
+    line-height: 1.5;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.btn-primary {
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 1.25rem;
+    padding: 20px 25px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/** common css **/
+
+/** start header css **/
+header {
+    background-color: var(--light-orange);
+    padding: 50px 0 0;
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    gap: 70px;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--dark2);
+}
+
+.brand {
+    color: var(--dark1);
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.banner {
+    text-align: center;
+    padding: 102px 0 45px;
+}
+
+.banner-content {
+    max-width: 868px;
+    margin: 0 auto;
+}
+
+.banner-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.banner-content p {
+    margin: 25px 0 32px;
+}
+
+.banner img {
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+/** end header css **/
+
+/** start css for our team section **/
+.our-teams {
+    display: flex;
+    gap: 73px;
+    align-items: center;
+    padding: 85px 0 130px;
+}
+
+.our-teams>div {
+    flex: 1;
+}
+
+.our-teams_images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-teams_images img {
+    border-radius: 8px;
+}
+
+.our-teams_content h3 {
+    font-size: 2.81rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.our-teams_content_heading-part1 {
+    color: var(--dark3);
+    font-weight: 500;
+}
+
+.our-teams_content_heading-part3 {
+    color: var(--orange);
+    display: block;
+}
+
+.our-teams_content p {
+    margin: 24px 0 32px;
+}
+
+/** end css for our team section **/
+
+
+/** responsive css **/
+@media screen and (max-width:576px) {
+    .d-flex {
+        flex-direction: column;
+    }
+}
+
+/** responsive css **/
