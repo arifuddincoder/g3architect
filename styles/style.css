@@ -27,6 +27,14 @@ h5 {
     color: var(--dark1);
 }
 
+body {
+    padding-bottom: 130px;
+}
+
+.w-542 {
+    max-width: 542px;
+}
+
 .work-sans-font {
     font-family: "Work Sans", serif;
     font-optical-sizing: auto;
@@ -35,6 +43,10 @@ h5 {
     font-size: 1.1rem;
     color: var(--dark3);
     line-height: 1.5;
+}
+
+.p-10 {
+    padding: 10px;
 }
 
 .text-center {
@@ -59,6 +71,10 @@ h5 {
     border-radius: 8px;
     cursor: pointer;
     font-weight: 500;
+}
+
+.heading-two {
+    font-size: 2.81rem;
 }
 
 /** common css **/
@@ -123,7 +139,6 @@ header {
 
 /** start css for our team section **/
 .our-teams {
-    display: flex;
     gap: 73px;
     align-items: center;
     padding: 85px 0 130px;
@@ -165,11 +180,318 @@ header {
 
 /** end css for our team section **/
 
+/** start css for features section **/
+.features {
+    align-items: center;
+    gap: 54px;
+    justify-content: space-between;
+}
+
+.features-content {
+    flex: 4.5;
+}
+
+.features-content>p {
+    margin-bottom: 30px;
+}
+
+.features-img {
+    flex: 5.5;
+    text-align: right;
+    position: relative;
+}
+
+.btn-feature {
+    font-size: 25px;
+    padding: 45px 42px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.btn-feature_year {
+    font-size: 65px;
+    line-height: 1;
+    display: block;
+    font-weight: 700;
+}
+
+.features-content h2 {
+    line-height: 1.2;
+    border-left: 5px solid var(--orange);
+    padding-left: 21px;
+    margin-bottom: 20px;
+}
+
+.feature-item>p {
+    margin: 10px 0 0;
+}
+
+.feature-item {
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/** end css for features section **/
+
+/** start css for facts section **/
+.facts {
+    margin-top: 100px;
+}
+
+.facts>p {
+    margin-bottom: 50px;
+}
+
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 124px;
+}
+
+.fact {
+    border: 1px solid var(--orange);
+    border-radius: 8px;
+    padding: 45px 35px;
+}
+
+.fact h3 {
+    font-size: 2.8rem;
+    color: var(--dark2);
+}
+
+/** end css for facts section **/
+
+/** start css for our sponsors section **/
+.our-sponsors {
+    padding: 108px 0;
+}
+
+.our-sponsors>h2 {
+    text-align: center;
+}
+
+.our-sponsors>p {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.our-sponsors_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.our-sponsors_container>img {
+    margin: 0 auto;
+    filter: grayscale(100%);
+}
+
+/** end css for our sponsors section **/
+
+/** start css for footer section **/
+footer {
+    background-color: rgba(255, 244, 231, 1);
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 38px 0 30px;
+    border-radius: 8px;
+}
+
+footer p {
+    color: var(--dark2);
+}
+
+/** end css for footer section **/
+
 
 /** responsive css **/
-@media screen and (max-width:576px) {
+@media screen and (max-width:480px) {
     .d-flex {
         flex-direction: column;
+    }
+
+    .nav-links {
+        gap: 5px;
+        text-align: center;
+    }
+
+    .brand {
+        margin-bottom: 10px;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .our-teams {
+        gap: 25px;
+        padding: 50px 0;
+    }
+
+    .our-teams_images {
+        grid-template-columns: 1fr;
+    }
+
+    .our-teams_content {
+        text-align: center;
+    }
+
+    .facts-container {
+        gap: 15px;
+        grid-template-columns: 1fr;
+    }
+
+    .our-sponsors_container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .features {
+        flex-direction: column-reverse;
+    }
+
+    .features-img {
+        width: 100%;
+        text-align: left;
+    }
+
+    .btn-feature_year {
+        font-size: 30px;
+    }
+
+    .btn-feature {
+        padding: 30px;
+        font-size: 1.2rem;
+    }
+
+    .heading-two {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (min-width:481px) and (max-width:576px) {
+    .d-flex {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        gap: 5px;
+        text-align: center;
+    }
+
+    .brand {
+        margin-bottom: 10px;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .facts-container {
+        gap: 15px;
+        grid-template-columns: 1fr;
+    }
+
+    .our-sponsors_container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .features {
+        flex-direction: column-reverse;
+    }
+
+    .features-img {
+        width: 100%;
+        text-align: left;
+    }
+
+    .btn-feature_year {
+        font-size: 2.5rem;
+    }
+
+    .btn-feature {
+        padding: 40px;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:810px) {
+    .d-flex {
+        flex-direction: column;
+    }
+
+    .brand {
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 5px;
+        text-align: center;
+    }
+
+    .facts-container {
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .our-sponsors_container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .features {
+        flex-direction: column-reverse;
+    }
+
+    .features-img {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 811px) and (max-width:990px) {
+    .facts-container {
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .our-sponsors_container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .features {
+        flex-direction: column-reverse;
+    }
+
+    .features-img {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width:1439px) {
+    .facts-container {
+        gap: 20px;
+    }
+
+    .features {
+        flex-direction: column-reverse;
+    }
+
+    .features-img {
+        width: 100%;
+        text-align: left;
     }
 }
 
